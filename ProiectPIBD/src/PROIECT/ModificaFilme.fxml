@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PROIECT.PIBDPROJController">
+   <children>
+      <Label layoutX="146.0" layoutY="48.0" text="Modifica Film">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="145.0" text="Nume">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="86.0" layoutY="192.0" text="Durata">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="inputnumeF" layoutX="162.0" layoutY="145.0" />
+      <TextField fx:id="inputdurataF" layoutX="162.0" layoutY="192.0" />
+      <Button layoutX="174.0" layoutY="308.0" mnemonicParsing="false" onAction="#modificaFilme" text="Modifica">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="87.0" layoutY="242.0" text="Rating">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="inputratingF" layoutX="162.0" layoutY="243.0" />
+   </children>
+</AnchorPane>

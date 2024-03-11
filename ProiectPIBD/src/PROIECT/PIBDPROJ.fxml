@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PROIECT.PIBDPROJController">
+   <children>
+      <TabPane prefHeight="596.0" prefWidth="887.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab_filme" text="Filme">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="28.0" text="Suntem in tabela Filme">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buton_IncarcareFilme" layoutX="764.0" layoutY="28.0" mnemonicParsing="false" onAction="#incarcaFilme" text="Incarca Filme">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="tabela_Filme" layoutX="14.0" layoutY="63.0" prefHeight="502.0" prefWidth="856.0">
+                          <columns>
+                            <TableColumn fx:id="atribut_idfilme" prefWidth="221.0" text="ID-Filme" />
+                            <TableColumn fx:id="atribut_numeF" prefWidth="235.0" text="Nume" />
+                              <TableColumn fx:id="atribut_durataF" prefWidth="171.0" text="Durata" />
+                              <TableColumn fx:id="atribut_ratingF" minWidth="0.0" prefWidth="226.0" text="Rating" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="246.0" layoutY="23.0" mnemonicParsing="false" onAction="#startAdaugaFilme" prefHeight="26.0" prefWidth="114.0" text="Adauga filme">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font></Button>
+                        <Button layoutX="442.0" layoutY="24.0" mnemonicParsing="false" onAction="#stergeFilme" prefHeight="26.0" prefWidth="114.0" text="Sterge filme">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="598.0" layoutY="24.0" mnemonicParsing="false" onAction="#startModificaFilme" prefHeight="26.0" prefWidth="114.0" text="Modifica Filme">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab_categorii" text="Categorii">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="25.0" text="Suntem in tabela Categorii">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buton_IncarcareCategorii" layoutX="749.0" layoutY="25.0" mnemonicParsing="false" onAction="#incarcaCategorie" text="Incarca Categorie">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="tabela_Categorii" layoutX="14.0" layoutY="63.0" prefHeight="502.0" prefWidth="858.0">
+                          <columns>
+                            <TableColumn fx:id="atribut_idcategorii" prefWidth="198.0" text="ID-Categorii" />
+                            <TableColumn fx:id="atribut_numeC" prefWidth="198.0" text="Nume" />
+                              <TableColumn fx:id="atribut_popularitateC" prefWidth="222.0" text="Popularitate" />
+                              <TableColumn fx:id="atribut_taraC" prefWidth="240.0" text="Tara" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="256.0" layoutY="21.0" mnemonicParsing="false" onAction="#startAdaugaCategorii" prefHeight="26.0" prefWidth="136.0" text="Adauga Categorie">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font></Button>
+                        <Button layoutX="424.0" layoutY="21.0" mnemonicParsing="false" onAction="#stergeCategorie" prefHeight="26.0" prefWidth="136.0" text="Sterge Categorie">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="583.0" layoutY="21.0" mnemonicParsing="false" onAction="#startModificaCategorii" prefHeight="26.0" prefWidth="136.0" text="Modifica Categorie">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tab_metadata" text="MetaData">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="12.0" layoutY="29.0" text="Suntem in tabela MetaData">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buton_IncarcareMetadata" layoutX="749.0" layoutY="30.0" mnemonicParsing="false" onAction="#incarcaMetadata" text="Incarca MetaData">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="tabela_Metadata" layoutX="12.0" layoutY="66.0" prefHeight="500.0" prefWidth="858.0">
+                          <columns>
+                            <TableColumn fx:id="atribut_idmetadata" prefWidth="168.0" text="ID-MetaData" />
+                            <TableColumn fx:id="atribut_idfilme1" prefWidth="135.0" text="ID-Filme" />
+                              <TableColumn fx:id="atribut_idcategorii1" prefWidth="131.0" text="ID-Categorii" />
+                              <TableColumn fx:id="atribut_an" prefWidth="179.0" text="An de lansare" />
+                              <TableColumn fx:id="atribut_limba" minWidth="0.0" prefWidth="245.0" text="Limba" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="230.0" layoutY="25.0" mnemonicParsing="false" onAction="#startAdaugaMetadata" prefHeight="26.0" prefWidth="132.0" text="Adauga Metadata">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font></Button>
+                        <Button layoutX="404.0" layoutY="26.0" mnemonicParsing="false" onAction="#stergeMetadata" prefHeight="26.0" prefWidth="132.0" text="Sterge Metadata">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="569.0" layoutY="26.0" mnemonicParsing="false" onAction="#startModificaMetadata" prefHeight="26.0" prefWidth="132.0" text="Modifica Metadata">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
