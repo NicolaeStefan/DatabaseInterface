@@ -19,7 +19,7 @@ public class DBOperations {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projpibd?useSSL=false", 
-						"root", "@lexandru1A");
+						"root", "yourpassword");
 			} catch (ClassNotFoundException cnfe) {
 				error = "ClassNotFoundException: Nu s-a gasit driverul bazei de date.";
 				throw new ClassNotFoundException(error);
@@ -35,7 +35,7 @@ public class DBOperations {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + bd, "root", 
-						"@lexandru1A");
+						"yourpassword");
 			} catch (ClassNotFoundException cnfe) {
 				error = "ClassNotFoundException: Nu s-a gasit driverul bazei de date.";
 				throw new ClassNotFoundException(error);
@@ -52,7 +52,7 @@ public class DBOperations {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				con = DriverManager.getConnection("jdbc:mysql://" + ip + ":3306/" + bd, "root", 
-						"@lexandru1A");
+						"yourpassword");
 			} catch (ClassNotFoundException cnfe) {
 				error = "ClassNotFoundException: Nu s-a gasit driverul bazei de date.";
 				throw new ClassNotFoundException(error);
